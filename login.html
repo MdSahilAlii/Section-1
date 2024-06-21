@@ -5,11 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab:300,300italic,regular,italic,500,500italic,600,600italic,700,700italic" rel="stylesheet" />
     <style>
 
+        :root{
+            --theme-color: rgba(153, 94, 153, 0.641)  ;
+            --accent-color: rgb(103, 84, 121);
+        }
+        *{
+            font-family: zilla slab;
+        }
         .card{
-            border: 3px solid violet;
+            /* border: 3px solid red; */
             width: 20%;
+
+            box-shadow: 3px 3px 10px 2px #000000a2;
+            padding: 30px;
+            border-radius: 10px;
+            box-sizing: border-box;
+            background-color: white;
 
         }
 
@@ -18,13 +33,68 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            box-sizing: border-box;
+            background-color: rgb(80, 80, 131);
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE-rgXNVTlpxiqs_lshEwmEz9JlEQT5oVU1A&s');
+            background-size: cover;
+            margin: 0%;
             
         }
+        .form-title{
+            text-align: center;
+            font-family: roboto;
+
+        }
+        .text_input,.Submit_btn{
+            box-sizing: border-box;
+            display: block;
+            width: 100%;
+            background-color: var(--theme-color);
+
+        }
+        .text_input{
+            margin-bottom: 20px;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border-bottom: 2px solid var(--theme-color);
+            /* background-color: var(accent-color); */
+
+        }
+        .Submit_btn{
+            padding: 10px;
+            border-radius: 3px;
+            background-color:var(--theme-color);
+            font-weight: bold;
+            color: white;
+           
+        }
+        .link{
+            color: rgba(40, 40, 112, 0.755);
+            text-decoration: none;       
+            margin bottom: 30px;
+        }
+         
+        .signup-link{
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.8em ;
+            font-weight: bold;
+        }
+
+        .brand{
+            text-align: center;
+            text-transform: uppercase;
+            color: var(--theme-color);
+
+        }
+
     </style>
 </head>
 <body>
     
     <div class="card">
+        <h1 class="brand">Brand Name</h1>
 
 
         <h3 class="form-title">Login Form</h3>
@@ -36,7 +106,11 @@
             <label for="password">Password</label>
             <input class="text_input" type="password" name="" id="password"><br>
 
+            <a href="#" class="link forgot-link">Forgot Password</a><br>
+
             <button class="Submit_btn">Submit</button>
+
+            <a href="#"class="link signup-link">Not Registered Yet? Signup</a>
         </form>
 
     </div>
