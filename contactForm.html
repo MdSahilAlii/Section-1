@@ -4,40 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
-
+    <link rel="stylesheet" href="https://www.freepik.com/free-vector/realistic-handset-concept_9398699.htm#query=contact%20us%20background&position=13&from_view=keyword&track=ais_user&uuid=8c062afa-723b-4dea-8f30-5c7f03ddf6ce">
+    <link rel="stylesheet" href="https://img.freepik.com/free-photo/vintage-pink-telephone-composition_23-2148913955.jpg?size=626&ext=jpg">
+    <link rel="stylesheet" href="https://t4.ftcdn.net/jpg/04/54/57/63/240_F_454576300_AN2dAthqhFl11iIoqHBgl3mpyXyzREnx.jpg">
+    <link rel="stylesheet" href="https://i.pinimg.com/736x/bb/18/1e/bb181ebd67a8b46b50e019cab52b80ff.jpg">
+    <link rel="stylesheet" href="https://i.pinimg.com/736x/b7/82/d4/b782d491b266c2d1ca92931679581d70.jpg">
+    
     <style>
         h3{
             text-align: center;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #2067b8;
+            /* background-image: url('data:image/jpeg;base64,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'); */
+            /* background-image: url('https://img.freepik.com/free-photo/top-view-blue-monday-concept-composition-with-telephone_23-2149139104.jpg?t=st=1719136235~exp=1719136835~hmac=df0512fec950ac30825e09299cab8941c220307bcb0110e6513d8b8723a05187'); */
+            /* background-image: url('https://c4.wallpaperflare.com/wallpaper/88/769/281/1920x1080-px-digital-art-japan-minimalism-simple-background-sun-trees-video-games-star-wars-hd-art-wallpaper-preview.jpg'); */
+            background-image: url('https://cdn.wallpapersafari.com/97/50/eRwDMy.jpg')
+
+
+            
         }
     form{
         text-align: center;
         /* display: flex; */
         justify-content: center;
-    }
-    .card{
+
         
     }
+    .card{
+        /* display: flex;
+        text-align: center;
+        justify-content: center; */
+ 
+        width: 20%;
+         box-sizing: border-box; 
+        box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.635);
+        padding: 30px; 
+        border-radius: 5px;
+        
+        /* display: flex;
+        justify-content: center;
+        text-align: center; */
+        
+        /* box-sizing: border-box; */
+
+
+
+
+    }
+    div{
+        background-color: rgb(255, 255, 255);
+        text-decoration: solid;
+     
+    }
+    .btn{
+        color: aliceblue;
+        background-color: rgba(49, 49, 213, 0.751);
+        border-radius: 4px;
+        font-weight: bold;
+    }
+    .text-input{
+        background-color: rgba(95, 137, 185, 0.701);
+        /* color: blanchedalmond; */
+    }
+    .contact{
+        color: #3b72b0;
+        font-weight: bold;
+        text-transform: uppercase;
+        /* background-color: azure;
+    } */}
     </style>
 </head>
 <body>
     
+    
     <div class="card">
 
-        <h3>Contact Us</h3>
-        <form >
-            <label >Your Name</label>
-            <input type="text"><br><br>
+        <h3 class="contact">Contact Us</h3>
+        <form class="form" >
+            <label >Name</label>
+            <input class="text-input" type="text"><br><br>
 
             <label >Email</label>
-            <input type="text" name="" id=""><br><br>
+            <input class="text-input" type="text" name="" id=""><br><br>
 
             <label >Phone</label>
-            <input type="number"><br><br>
+            <input class="text-input"type="number"><br><br>
 
             <label >Message</label>
-            <textarea name="message" id=""></textarea><br><br>
+            <textarea class="text-input"name="message" id=""></textarea><br><br>
 
-            <button>Send Message</button>
+            <button class="btn">Send Message</button>
 
 
 
