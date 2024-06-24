@@ -131,7 +131,7 @@
             border: 1px solid black;
             margin: 1rem;
             padding: 2rem 2rem;
-            text-align: center;
+            /* text-align: center; */
             color: white;
             /* background-image: url('https://t4.ftcdn.net/jpg/06/80/65/75/240_F_680657507_vr6geDlVbMupg9s34dyzRYPhvK2gdMok.jpg'); */
             /* background-image: url('https://img.freepik.com/free-photo/abstract-smooth-dark-blue-with-black-vignette-studio-well-use-as-backgroundbusiness-reportdigitalwebsite-templatebackdrop_1258-108878.jpg?w=1380&t=st=1719175534~exp=1719176134~hmac=fd7e4519bf26971c9a9559d38f7bbdbf8da8851452b629092268989b04c494d2'); */
@@ -141,16 +141,68 @@
 
 
         .footer-card {
-            display: inline-block;
+            /* display: inline-block; */
+            /* display: flex; */
             /* border: 1px solid red; */
             padding: 30px 30px;
             vertical-align: middle;
             margin: 30px;
+            width: 40%;
             /* padding: 2px; */
+            height: 150px;
+        
             
 
 
 
+        }
+        .Company-info{
+            text-align: left;
+            /* border: 2px solid red; */
+        }
+        .Social{
+            text-align: left;
+        }
+        .Contact-Us{
+            /* text-align: left; */
+        }
+        .Footer-container{
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* gap: 200px; */
+        }
+        .footer-card>button{
+            background-color: transparent;
+            display: block;
+            /* background: none; */
+            border: none;
+            color: white;
+            padding: 5px;
+        }
+        .service{
+            display: grid;
+            
+            align-items: center;
+        }
+        .service1{
+            grid-template-columns: 1fr 2fr;
+        }
+        .service-image{
+            /* border: 2px solid red; */
+        }
+        .service-content{
+            /* border: 2px solid blue; */
+            font-size: 20px;
+        }
+        .service2{
+            /* display: grid; */
+            grid-template-columns: 2fr 1fr;
+            
+        }
+        .service3{
+            grid-template-columns: repeat(4,1fr);
         }
 
     </style>
@@ -216,38 +268,96 @@
                 </div>
             </section>
 
+            <section class="section-services" >
+                <div class="service service1">
+                    <div class="service-image">
+                        <img src="img.png" style="width: 100%;" alt="">
+                    </div>
+                    <div class="service-content">
+                        <h2>Service 1</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex mollitia cum voluptas est veniam, incidunt in eaque vel doloremque sunt eveniet repellat ad aliquid possimus fuga dolorum nostrum vero esse ipsa? Qui, nihil quam?</p>
+                        <button class="btn btn-main">Read More</button>
+                    </div>
+
+                </div>
+            </section>
+            
+            <section class="section-services" >
+                <div class="service service2">
+                    <div class="service-content">
+                        <h2>Service 1</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex mollitia cum voluptas est veniam, incidunt in eaque vel doloremque sunt eveniet repellat ad aliquid possimus fuga dolorum nostrum vero esse ipsa? Qui, nihil quam?</p>
+                        <button class="btn btn-main">Read More</button>
+                    </div>
+                    <div class="service-image">
+                        <img src="img.png" style="width: 100%;" alt="">
+                    </div>
+                    
+
+                </div>
+            </section>
+
+            <section class="section-services" >
+                <div class="service service3">
+                    <div class="service-content">
+                        <h2>Service 3</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex mollitia cum voluptas est veniam, incidunt in eaque vel doloremque sunt eveniet repellat ad aliquid possimus fuga dolorum nostrum vero esse ipsa? Qui, nihil quam?</p>
+                        <button class="btn btn-main">Read More</button>
+                    </div>
+                    <div class="service-image">
+                        <img src="img.png" style="width: 100%;" alt="">
+                    </div>
+                    <div class="service-content">
+                        <h2>Service 4</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex mollitia cum voluptas est veniam, incidunt in eaque vel doloremque sunt eveniet repellat ad aliquid possimus fuga dolorum nostrum vero esse ipsa? Qui, nihil quam?</p>
+                        <button class="btn btn-main">Read More</button>
+                    </div>
+                    <div class="service-image">
+                        <img src="img.png" style="width: 100%;" alt="">
+                    </div>
+                    
+
+                </div>
+            </section>
+
+
+
         </article>
 
 
     </main>
 
     <footer>
+        <div class="Footer-container">
         <div class="Company-info footer-card">
-            <h2>Company</h2>
-            <h4>About Us</h4>
-            <h4>Careers </h4>
-            <h4>Learn</h4>
-            <h4>FAQs</h4>
+            <button>COMPANY</button>
+            <hr>
+            <button>About Us</button>
+            <button>Careers</button> 
+            <button>Learn</button>
+            <button>FAQs</button>
 
 
         </div>
         <div class="Contact-Us footer-card">
-            
-            <h2><i class="fa-solid fa-phone fa-0.2x"></i> Contact Us</h2>
-            <h4>xyz@gmail.com</h4>
-            <h4>340 S Lemon Ave. #</h4>
-            <h4>Walnut, CA 91786</h4>
+          
+            </i> <button> <i class="fa-solid fa-phone fa-0.2x"> </i>  CONTACT US</button>
+            <hr>
+            <button>xyz@gmail.com</button>
+            <button>340 S Lemon Ave. #</button>
+            <button>Walnut, CA 91786</button>
 
 
         </div>
         <div class="Social footer-card">
             <h2>Social</h2>
-            <h4><i class="fa-brands fa-instagram"></i> Instagram</h4>
-            <h4><i class="fa-brands fa-meta"></i> X</h4>
-            <h4><i class="fa-brands fa-linkedin"></i> Linkedin</h4>
+            <hr>
+            <button><i class="fa-brands fa-instagram"></i> Instagram</button>
+            <button><i class="fa-brands fa-meta"></i> X</button>
+            <button><i class="fa-brands fa-linkedin"></i> Linkedin</button>
 
         </div>
-
+    </div>
 
 
     </footer>
