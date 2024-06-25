@@ -215,6 +215,8 @@
 
         .service3 {
             grid-template-columns: repeat(4, 1fr);
+            /* border: 2px solid red;
+             */
         }
 
         .contact-form {
@@ -222,7 +224,7 @@
             /* display: flex; */
             text-align: center;
             /* justify-content: center; */
-            background-color:rgb(31, 108, 115);
+            background-color:transparent;
             padding:45px; 
             margin: 20px;
             box-sizing: border-box;
@@ -251,6 +253,30 @@
 
 
          }
+         .section-services{
+            /* border: 2px solid green; */
+            margin: 100px;
+            background-color: white;
+            border-radius: 50px;
+            /* background-color:var(--theme-color); */
+            box-shadow: 4px 5px 0px 0px var(--theme-color-dark);
+         }
+         .section-services2, .section-services3{
+            /* border: 2px solid green; */
+            margin: 100px;
+            background-color: white;
+            border-radius: 50px;
+            box-shadow: 4px 5px 0px 0px var(--theme-color-dark);
+
+         }
+         body{
+            /* background: rgb(94,186,187); */
+/* background: linear-gradient(0deg, rgba(94,186,187,1) 0%, rgba(247,247,247,1) 66%); */
+
+background: rgb(94,186,187);
+background: linear-gradient(0deg, rgba(94,186,187,1) 0%, rgba(247,247,247,1) 82%);
+         }
+         
     </style>
 
 
@@ -330,10 +356,10 @@
                 </div>
             </section>
 
-            <section class="section-services">
+            <section class="section-services2">
                 <div class="service service2">
                     <div class="service-content">
-                        <h2>Service 1</h2>
+                        <h2>Service 2</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex mollitia cum voluptas est veniam,
                             incidunt in eaque vel doloremque sunt eveniet repellat ad aliquid possimus fuga dolorum
                             nostrum vero esse ipsa? Qui, nihil quam?</p>
@@ -341,13 +367,14 @@
                     </div>
                     <div class="service-image">
                         <img src="img2.svg" style="width: 100%;" alt="">
+                        
                     </div>
 
 
                 </div>
             </section>
 
-            <section class="section-services">
+            <section class="section-services3">
                 <div class="service service3">
                     <div class="service-content">
                         <h2>Service 3</h2>
