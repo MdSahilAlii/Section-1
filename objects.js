@@ -59,6 +59,14 @@ const smartphoneArray = [
         ram: ['6gb ', '8gb']
     },
 
+    {
+        brand: 'Apple',
+        model: 'Iphone 15',
+        price: 59999,
+        colors: ['red', 'purple', 'blue'],
+        ram: ['6gb ', '8gb']
+    },
+
 
     {
         brand: 'MI',
@@ -73,6 +81,14 @@ const smartphoneArray = [
         brand: 'Samsung',
         model: 'S24 Ultra',
         price: 110999,
+        colors: ['silver', 'gold'],
+        ram: ['8gb ', '32gb']
+
+    },
+    {
+        brand: 'Samsung',
+        model: 'A15',
+        price: 11999,
         colors: ['silver', 'gold'],
         ram: ['8gb ', '32gb']
 
@@ -118,10 +134,39 @@ const whiteColor = smartphoneArray.filter( (a) => {if(a.colors.includes('white')
 })
 
 console.log(whiteColor);
+console.log("-----------------------Questions-------------------");
+
+// filter all apple smartphone
+
+const keyword='e';
+const apple_brand= smartphoneArray.filter( (a) => {if( a.brand.toLowerCase()===keyword.toLowerCase){
+    return true;
+} }  );
+const apple_brand2= smartphoneArray.filter( (a) => {if( a.brand.toLowerCase().includes(keyword.toLowerCase())){
+    return true;
+} }  );
+
+console.log(apple_brand);
+console.log(apple_brand2);
 
 
+const brands=  smartphoneArray.map( (a ) => {return a.brand;});
+console.log(new Set(brands));
+
+console.log(Array.from(new Set(brands)));
+console.log(Array.from('APPLE'));
 
 
+let [brand, model ,price ] = ['Apple', 'Iphone 16' , 79999];
+console.log(`${brand} ${model} - ${price}`);
+
+// console.log(smartphoneArray(brand + ' '+ model + '-' + 'price' ));
+
+const element = smartphoneArray.filter( ( a,index) => {return console.log(`${index+1}. ${a.brand} ${a.model} - ${a.price}`); })
+
+
+const brandColor = smartphoneArray.map((phone) => {return phone.colors.map((c)=> {return `${phone.brand} ${phone.model} ( $(c))`}) });
+console.log(brandColor.flat());
 
 
 
